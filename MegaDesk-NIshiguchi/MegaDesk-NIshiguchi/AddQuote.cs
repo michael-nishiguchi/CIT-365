@@ -35,7 +35,13 @@ namespace MegaDesk_Nishiguchi {
 
 
                 desk.Width = float.Parse(widthInput.Text);
+                if(desk.Width < 24 || desk.Width > 96) {
+                    return;
+                }
                 desk.Depth = float.Parse(depthInput.Text);
+                if (desk.Depth < 12 || desk.Depth > 46) {
+                    return;
+                }
                 desk.getArea();
 
                 desk.DrawerNumber = int.Parse(drawerNumberInput.SelectedItem.ToString());
@@ -55,7 +61,6 @@ namespace MegaDesk_Nishiguchi {
             }
             catch (Exception ex) {
                 MessageBox.Show(ex.Message);
-
             }
         }
 

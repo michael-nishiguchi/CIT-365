@@ -41,7 +41,8 @@
             // 
             // backToMain
             // 
-            this.backToMain.Location = new System.Drawing.Point(39, 26);
+            this.backToMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.backToMain.Location = new System.Drawing.Point(588, 363);
             this.backToMain.Name = "backToMain";
             this.backToMain.Size = new System.Drawing.Size(200, 75);
             this.backToMain.TabIndex = 0;
@@ -52,73 +53,82 @@
             // customerNameLabel
             // 
             this.customerNameLabel.AutoSize = true;
-            this.customerNameLabel.Location = new System.Drawing.Point(37, 173);
+            this.customerNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.customerNameLabel.Location = new System.Drawing.Point(12, 62);
             this.customerNameLabel.Name = "customerNameLabel";
-            this.customerNameLabel.Size = new System.Drawing.Size(82, 13);
+            this.customerNameLabel.Size = new System.Drawing.Size(124, 20);
             this.customerNameLabel.TabIndex = 1;
             this.customerNameLabel.Text = "Customer Name";
             // 
             // customerNameBox
             // 
-            this.customerNameBox.Location = new System.Drawing.Point(183, 170);
+            this.customerNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.customerNameBox.Location = new System.Drawing.Point(202, 64);
             this.customerNameBox.Name = "customerNameBox";
-            this.customerNameBox.Size = new System.Drawing.Size(100, 20);
+            this.customerNameBox.Size = new System.Drawing.Size(173, 26);
             this.customerNameBox.TabIndex = 2;
             // 
             // widthLabel
             // 
             this.widthLabel.AutoSize = true;
-            this.widthLabel.Location = new System.Drawing.Point(37, 221);
+            this.widthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.widthLabel.Location = new System.Drawing.Point(12, 113);
             this.widthLabel.Name = "widthLabel";
-            this.widthLabel.Size = new System.Drawing.Size(96, 13);
+            this.widthLabel.Size = new System.Drawing.Size(142, 20);
             this.widthLabel.TabIndex = 3;
             this.widthLabel.Text = "Desk Width(24-96)";
             // 
             // widthInput
             // 
-            this.widthInput.Location = new System.Drawing.Point(184, 221);
+            this.widthInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.widthInput.Location = new System.Drawing.Point(202, 115);
             this.widthInput.Name = "widthInput";
-            this.widthInput.Size = new System.Drawing.Size(100, 20);
+            this.widthInput.Size = new System.Drawing.Size(173, 26);
             this.widthInput.TabIndex = 4;
             this.widthInput.Validating += new System.ComponentModel.CancelEventHandler(this.widthInput_Validating);
             // 
             // depthInput
             // 
-            this.depthInput.Location = new System.Drawing.Point(183, 267);
+            this.depthInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.depthInput.Location = new System.Drawing.Point(202, 159);
             this.depthInput.Name = "depthInput";
-            this.depthInput.Size = new System.Drawing.Size(100, 20);
+            this.depthInput.Size = new System.Drawing.Size(173, 26);
             this.depthInput.TabIndex = 6;
             this.depthInput.Validating += new System.ComponentModel.CancelEventHandler(this.depthInput_Validating);
             // 
             // depthLabel
             // 
             this.depthLabel.AutoSize = true;
-            this.depthLabel.Location = new System.Drawing.Point(36, 267);
+            this.depthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.depthLabel.Location = new System.Drawing.Point(12, 159);
             this.depthLabel.Name = "depthLabel";
-            this.depthLabel.Size = new System.Drawing.Size(97, 13);
+            this.depthLabel.Size = new System.Drawing.Size(145, 20);
             this.depthLabel.TabIndex = 5;
             this.depthLabel.Text = "Desk Depth(12-48)";
             // 
             // drawerNumberLabel
             // 
             this.drawerNumberLabel.AutoSize = true;
-            this.drawerNumberLabel.Location = new System.Drawing.Point(455, 170);
+            this.drawerNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.drawerNumberLabel.Location = new System.Drawing.Point(454, 62);
             this.drawerNumberLabel.Name = "drawerNumberLabel";
-            this.drawerNumberLabel.Size = new System.Drawing.Size(122, 13);
+            this.drawerNumberLabel.Size = new System.Drawing.Size(183, 20);
             this.drawerNumberLabel.TabIndex = 8;
             this.drawerNumberLabel.Text = "Number of Drawers (0-7)";
             // 
             // materialLabel
             // 
             this.materialLabel.AutoSize = true;
-            this.materialLabel.Location = new System.Drawing.Point(455, 221);
+            this.materialLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.materialLabel.Location = new System.Drawing.Point(454, 113);
             this.materialLabel.Name = "materialLabel";
-            this.materialLabel.Size = new System.Drawing.Size(84, 13);
+            this.materialLabel.Size = new System.Drawing.Size(125, 20);
             this.materialLabel.TabIndex = 9;
             this.materialLabel.Text = "Surface Material";
             // 
             // materialInput
             // 
+            this.materialInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialInput.FormattingEnabled = true;
             this.materialInput.Items.AddRange(new object[] {
             "Laminate",
@@ -126,13 +136,14 @@
             "Rosewood",
             "Veneer",
             "Pine"});
-            this.materialInput.Location = new System.Drawing.Point(602, 221);
+            this.materialInput.Location = new System.Drawing.Point(667, 115);
             this.materialInput.Name = "materialInput";
-            this.materialInput.Size = new System.Drawing.Size(121, 21);
+            this.materialInput.Size = new System.Drawing.Size(121, 28);
             this.materialInput.TabIndex = 10;
             // 
             // drawerNumberInput
             // 
+            this.drawerNumberInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.drawerNumberInput.FormattingEnabled = true;
             this.drawerNumberInput.Items.AddRange(new object[] {
             "0",
@@ -143,38 +154,41 @@
             "5",
             "6",
             "7"});
-            this.drawerNumberInput.Location = new System.Drawing.Point(602, 170);
+            this.drawerNumberInput.Location = new System.Drawing.Point(667, 64);
             this.drawerNumberInput.Name = "drawerNumberInput";
-            this.drawerNumberInput.Size = new System.Drawing.Size(121, 21);
+            this.drawerNumberInput.Size = new System.Drawing.Size(121, 28);
             this.drawerNumberInput.TabIndex = 11;
             this.drawerNumberInput.Text = "0";
             // 
             // rushOrderLabel
             // 
             this.rushOrderLabel.AutoSize = true;
-            this.rushOrderLabel.Location = new System.Drawing.Point(455, 267);
+            this.rushOrderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.rushOrderLabel.Location = new System.Drawing.Point(454, 159);
             this.rushOrderLabel.Name = "rushOrderLabel";
-            this.rushOrderLabel.Size = new System.Drawing.Size(61, 13);
+            this.rushOrderLabel.Size = new System.Drawing.Size(91, 20);
             this.rushOrderLabel.TabIndex = 12;
             this.rushOrderLabel.Text = "Rush Order";
             // 
             // shippingDaysInput
             // 
+            this.shippingDaysInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.shippingDaysInput.FormattingEnabled = true;
             this.shippingDaysInput.Items.AddRange(new object[] {
             "14",
             "7",
             "5",
             "3"});
-            this.shippingDaysInput.Location = new System.Drawing.Point(602, 267);
+            this.shippingDaysInput.Location = new System.Drawing.Point(667, 161);
             this.shippingDaysInput.Name = "shippingDaysInput";
-            this.shippingDaysInput.Size = new System.Drawing.Size(121, 21);
+            this.shippingDaysInput.Size = new System.Drawing.Size(121, 28);
             this.shippingDaysInput.TabIndex = 13;
             this.shippingDaysInput.Text = "14";
             // 
             // submit
             // 
-            this.submit.Location = new System.Drawing.Point(528, 319);
+            this.submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.submit.Location = new System.Drawing.Point(12, 363);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(200, 75);
             this.submit.TabIndex = 14;
@@ -201,6 +215,7 @@
             this.Controls.Add(this.customerNameBox);
             this.Controls.Add(this.customerNameLabel);
             this.Controls.Add(this.backToMain);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.Name = "AddQuote";
             this.Text = "AddQuote";
             this.ResumeLayout(false);

@@ -13,5 +13,12 @@ namespace MegaDesk_Nishiguchi {
         public SearchQuotes() {
             InitializeComponent();
         }
+
+        private void backToMain_Click(object sender, EventArgs e) {
+            MainMenu mainMenuForm = new MainMenu();
+            mainMenuForm.Tag = this;
+            mainMenuForm.Show(this);
+            Hide();
+        }
     }
 }

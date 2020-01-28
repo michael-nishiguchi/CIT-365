@@ -43,5 +43,11 @@ namespace MegaDesk_Nishiguchi {
             Hide();
         }
 
+        private void backToMain_Click(object sender, EventArgs e) {
+            MainMenu mainMenuForm = new MainMenu();
+            mainMenuForm.Tag = this;
+            mainMenuForm.Show(this);
+            Hide();
+        }
     }
 }

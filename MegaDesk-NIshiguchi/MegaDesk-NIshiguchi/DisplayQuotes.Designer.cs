@@ -30,13 +30,15 @@
             this.SurfaceArea = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Material = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ProductionTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.backToMain = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // addQuote
             // 
-            this.addQuote.Location = new System.Drawing.Point(25, 366);
+            this.addQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.addQuote.Location = new System.Drawing.Point(12, 363);
             this.addQuote.Name = "addQuote";
-            this.addQuote.Size = new System.Drawing.Size(141, 23);
+            this.addQuote.Size = new System.Drawing.Size(200, 75);
             this.addQuote.TabIndex = 1;
             this.addQuote.Text = "Add New Quote";
             this.addQuote.UseVisualStyleBackColor = true;
@@ -50,6 +52,7 @@
             this.SurfaceArea,
             this.Material,
             this.ProductionTime});
+            this.listView.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.listView.FullRowSelect = true;
             this.listView.HideSelection = false;
             this.listView.Location = new System.Drawing.Point(12, 12);
@@ -84,11 +87,23 @@
             this.ProductionTime.Text = "Production Time";
             this.ProductionTime.Width = 114;
             // 
+            // backToMain
+            // 
+            this.backToMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.backToMain.Location = new System.Drawing.Point(588, 363);
+            this.backToMain.Name = "backToMain";
+            this.backToMain.Size = new System.Drawing.Size(200, 75);
+            this.backToMain.TabIndex = 3;
+            this.backToMain.Text = "Back to Main Menu";
+            this.backToMain.UseVisualStyleBackColor = true;
+            this.backToMain.Click += new System.EventHandler(this.backToMain_Click);
+            // 
             // DisplayQuotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.backToMain);
             this.Controls.Add(this.listView);
             this.Controls.Add(this.addQuote);
             this.Name = "DisplayQuotes";
@@ -105,5 +120,6 @@
         private System.Windows.Forms.ColumnHeader SurfaceArea;
         private System.Windows.Forms.ColumnHeader Material;
         private System.Windows.Forms.ColumnHeader ProductionTime;
+        private System.Windows.Forms.Button backToMain;
     }
 }
