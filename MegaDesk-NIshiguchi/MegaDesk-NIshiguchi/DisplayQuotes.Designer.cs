@@ -23,6 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             this.addQuote = new System.Windows.Forms.Button();
             this.listView = new System.Windows.Forms.ListView();
             this.Width = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -31,6 +32,7 @@
             this.Material = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ProductionTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.backToMain = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // addQuote
@@ -98,6 +100,12 @@
             this.backToMain.UseVisualStyleBackColor = true;
             this.backToMain.Click += new System.EventHandler(this.backToMain_Click);
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // DisplayQuotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -121,5 +129,6 @@
         private System.Windows.Forms.ColumnHeader Material;
         private System.Windows.Forms.ColumnHeader ProductionTime;
         private System.Windows.Forms.Button backToMain;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
