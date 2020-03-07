@@ -20,6 +20,7 @@ namespace MvcMovie.Models
                 }
 
                 context.Movie.AddRange(
+
                     new Movie
                     {
                         Title = "When Harry Met Sally",
